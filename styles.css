@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding-bottom: 10px;
+}
+
+body {
+    background-color: #1b1a1a;
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.navbar {
+    width: 100%
+}
+
+section {
+    width: 100%;
+}
+
+article {
+    font-size: 14px;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about_me {
+    width: 50%;
+}
+
+.pic {
+    position: relative;
+    padding: 0;
+}
+
+.pic .my_photo {
+    width: 250px;
+    height: 300px;
+    z-index: 1;
+}
+
+.my_photo:hover {
+    transition: all ease-in 0.3s;
+}
+
+.pic::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-color: #110f0f;
+    opacity: 0.5;
+}
