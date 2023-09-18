@@ -11,21 +11,36 @@
 
 <body>
 
-    <nav class="navbar">welcome</nav>
+    <nav class="navbar">
+        <span class="logo">
+            <span class="ben">
+                B3N</span><span class="dev">D3V</span>
+        </span>
 
-    <section>
-        <span>home:~$cat INTRO.vi </span><br>
-        <span>Welcome to the world of</span><br>s
-        <span>&nbsp &nbsp Benbellah Owino</span>
-    </section>
-    <section class="home">
+        <ul class="nav_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#links">Socials</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <header id="banner">
+        <span id="intro">home:~<span id="text">$echo name.vi </span></span><br>
+        <p class="welcome">Benbellah Owino Oruko<span class="reveal"></span></p>
+
+    </header>
+    <section class="home" id="home">
 
         <article class="about_me">
-            I'm a 21-year-old Fullstack Developer(Backend heavy) and with a profound passion for technology and an avid
+            I'm a <span id="age"></span> year-old Fullstack Developer(Backend heavy) and with a profound passion for
+            technology
+            and an avid
             love
             for gaming.
             Having started
-            my coding journey at a young age, I've honed my skills in both front-end and back-end development, always
+            my coding journey at a young age (19 yrs), I've honed my skills in both front-end and back-end development,
+            always
             striving for
             elegant and innovative solutions. What truly sets me apart is my insatiable curiosity to explore new
             technologies like Web3 and AI,
@@ -47,14 +62,15 @@
         </div>
     </section>
 
-    <figure class="links">
+    <figure class="links" id="links">
         <a href="https://twitter.com/BenbellahOwino" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="https://github.com/Benbellah-Owino" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://linkedin.com/in/benbellah-owino-805698231/" target="_blank"><i
                 class="fa-brands fa-linkedin-in"></i></a>
     </figure>
 
-    <section class="skills">
+    <!-- Skills -->
+    <section class="skills" id="skills">
         <div class="technical skill_set">
             <u>
                 <h2>Programming Languages</h2>
@@ -62,7 +78,7 @@
             <ol>
                 <u>
                     <ul>Frontend Web Development</ul>
-                </u>
+                </u><br>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Tailwind CSS</li>
@@ -73,7 +89,9 @@
             <ol>
                 <u>
                     <ul>Backend Web Development</ul>
+
                 </u>
+                <br>
                 <li>NodeJS</li>
                 <li>Express JS</li>
                 <li>Sveltkit</li>
@@ -83,6 +101,7 @@
                 <u>
                     <ul>Blockchain Development</ul>
                 </u>
+                <br>
                 <li>Solidity</li>
             </ol>
             <ol>
@@ -90,6 +109,7 @@
                 <u>
                     <ul>Database</ul>
                 </u>
+                <br>
                 <li>MySql</li>
                 <li>PostgreSql</li>
                 <li>MongoDB</li>
@@ -150,9 +170,13 @@
         </div>
     </section>
 
-    <section class="projects">
+    <H1>PROJECTS</H1>
 
-        <div class="project_container">
+    <section class="projects" id="projects">
+
+
+
+        <div class="project_container" id="post_wall">
             <h2 class="proj_title">PostWall</h2>
             <article>
                 <p>This is a simple twitter clone </p>
@@ -168,7 +192,7 @@
         </div>
 
 
-        <div class="project_container">
+        <div class="project_container" id="don_mark">
             <h2 class="proj_title">Don Mark Autos Info System</h2>
             <article>
                 <p>An information system for a car dealership and rental compamny
@@ -184,15 +208,33 @@
             </article>
         </div>
 
-        <div class="project_container">
+        <div class="project_container" id="vanilla_lib">
             <h2 class="proj_title">Vanilla Library System</h2>
             <article>
-                <p>A library management system that tracks books and books borrowed
+                <p>A library management system that helps a library in tracking its books
                 </p>
                 <u><b>Techstack</b></u><br><br>
                 <ul>
-                    <li>HTML, CSS, Javascript </li>
+                    <li>HTML </li>
+                    <li>CSS</li>
+                    <li>Typescript / Javascript</li>
                     <li>PostgreSql </li>
+                </ul>
+
+            </article>
+        </div>
+
+
+        <div class="project_container" id="portfolio">
+            <h2 class="proj_title">Portfolio</h2>
+            <article>
+                <p>The source code to this portfolio
+                </p>
+                <u><b>Techstack</b></u><br><br>
+                <ul>
+                    <li>HTML </li>
+                    <li>CSS</li>
+                    <li>Typescript / Javascript</li>
                 </ul>
 
             </article>
@@ -202,7 +244,13 @@
     </section>
 
     <footer>
-        ©Copyright <date id="footer_date">2023</date> - <b>Benbellah Owino</b>
+        <div>©Copyright <date id="footer_date">2023</date> - <b>Benbellah Owino</b></div>
+        <u>
+            <h3>Contacts</h3>
+        </u>
+        <p>+254796976663</p>
+        <p>owinobenbellah@gmail.com</p>
+
     </footer>
 
     <!-- Scripts -->
