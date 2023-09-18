@@ -47,12 +47,13 @@ article {
     -webkit-box-shadow: 0px 5px 13px 0px #fefefe;
     margin-top: 0;
     margin-bottom: 20px;
-    padding: 0 10px 0 10px;
-    width: 100%;
+    padding: 0 40px 0 20px;
+    width: 99%;
     height: 60px;
     position: fixed;
     top: 0;
-    right: 0;
+    right: auto;
+    left: auto;
 }
 
 .logo {
